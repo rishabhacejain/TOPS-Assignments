@@ -1,0 +1,23 @@
+Github
+
+
+Git Hub is a free and open-source distributed version control system designed to handle everything from small to large projects with speed and efficiency.
+
+Git Hub Cmmd
+
+cd <folder name> change directory to enter the file
+cd .. to exit
+dir to check the directory to check the number of folders.
+
+git --version to check whether git is present
+git config --global user.name "<user name>"
+git config --global user.email "<user email>"
+
+git clone <link from GitHub repository>
+git status to check the status whether untracked or committed
+ git add
+   git commit -m "new file"
+     git push
+ 
+<uploaded>
+
