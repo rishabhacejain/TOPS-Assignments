@@ -24,7 +24,7 @@ int main() {
                      printf("Enter the second number: ");
                      scanf("%f", &num2);
                      sum = num1 + num2;
-                     printf("The sum is: %.2f\n", sum);
+                     printf("Addition = %.2f\n", sum);
             break;
                    }
             case 2:{
@@ -34,7 +34,7 @@ int main() {
                      printf("Enter the second number: ");
                      scanf("%f", &num2);
                      difference = num1 - num2;
-                     printf("The difference is: %.2f\n", difference);
+                     printf("Difference = %.2f\n", difference);
             break;
                     }
             case 3:{
@@ -44,7 +44,7 @@ int main() {
                      printf("Enter the second number: ");
                      scanf("%f", &num2);
                      product = num1 * num2;
-                     printf("The product is: %.2f\n", product);
+                     printf("Product = %.2f\n", product);
             break;
                    }
             case 4:{
@@ -60,7 +60,7 @@ int main() {
                     else 
                     {
                      quotient = num1 / num2;
-                     printf("The quotient is: %.2f\n", quotient);
+                     printf("Division= %.2f\n", quotient);
                     }
             break;
                     }
