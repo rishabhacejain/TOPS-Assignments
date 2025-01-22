@@ -1,0 +1,72 @@
+Question 1: Define HTML. What is the purpose of HTML in web development?
+
+The standard language for creating and organizing web information is HTML (HyperText Markup Language). It is a markup language that uses components (or tags) that describe the content, like headings, paragraphs, links, images, tables, and more, to determine the structure of web pages.
+The Purspose of HTML in web development is very significant. Its like skeleton in human body. It Is the skeleton of Web developement.Some important 
+
+Structure Content: By giving text, graphics, and multimedia components a means to be formatted into a logical structure, HTML helps to arrange the content on a webpage.
+Create Links: Hyperlinks, which enable navigation between various web pages or resources, are defined using HTML.
+Facilitate Interaction: By using HTML elements such as forms, users can engage with websites by completing forms, submitting information, and using other services.
+Visual Layout: It works with CSS (Cascading Style Sheets), which manages look and styling, to influence how content is arranged on a website.
+SEO: Titles, descriptions, and headings are examples of crucial metadata that HTML offers to enhance search engine optimization (SEO) by assisting search engines in comprehending the material.
+Cross-platform Compatibility: HTML ensures that content can be viewed across a variety of devices (desktops, tablets, smartphones) and browsers.
+
+*****************************************************************************************************************************************
+*****************************************************************************************************************************************
+
+Question 2: Explain the basic structure of an HTML document. Identify the mandatory tags
+and their purposes.
+Answer:So the Basic Structure of HTML Looks like this.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+  </head>
+  <body>
+    <!-- Content goes here -->
+  </body>
+</html>
+
+In the above code 
+
+<!DOCTYPE html> define the document type  and version of HTML  being used. It tells the browser that the document is an HTML5 document, ensuring correct rendering of the page.
+
+<html> tag is the root element that contains all the HTML content of the document. It encapsulates the entire HTML structure.The Attribute lang="en"  specifies the language of document.
+
+<head> tag contains meta-information about the document, such as metadata, links to external resources (like stylesheets), and the title of the webpage.
+
+<title> tag Defines the title of the webpage that appears in the browser's title bar or tab. This is important for user navigation and SEO.
+
+<body> Contains all the visible content on the webpage, such as text, images, links, forms, etc. It is the main part of the HTML document that users see.
+
+These tags form the basic skeleton of an HTML document and are essential for a properly structured web page.
+
+*****************************************************************************************************************************************
+*****************************************************************************************************************************************
+
+Question 3: What is the difference between block-level elements and inline elements in
+HTML? Provide examples of each.
+
+In HTML, elements are classified into two categories based on their layout behavior: block-level elements and inline elements. 
+
+Block-level elements, such as <div>, <p>, <h1>, and <section>, occupy the full width of their parent container and always start on a new line, causing a line break before and after the element. These elements are used to structure the layout of a webpage, creating sections and paragraphs of content.
+
+Inline elements, such as <a>, <span>, <strong>, and <img>, only take up as much width as necessary for their content and do not cause line breaks. They appear within a line, flowing alongside other inline elements or text. Inline elements are typically used for smaller parts of content within block-level elements, such as links, emphasized text, or images. The key difference between the two is that block-level elements create structure by forcing line breaks, while inline elements allow content to flow naturally within the surrounding text without breaking the layout.
+*****************************************************************************************************************************************
+*****************************************************************************************************************************************
+
+Question 4: Discuss the role of semantic HTML. Why is it important for accessibility and SEO?
+Provide examples of semantic elements.
+
+Role of Semantic HTML:
+Semantic HTML uses tags that describe the meaning of the content they enclose, making the webpage structure more understandable for both developers and browsers. Instead of using generic tags like <div>, semantic elements like <header>, <footer>, and <article> provide context and clarify the purpose of the content.
+
+Importance for Accessibility:
+Semantic HTML improves accessibility by enabling screen readers and assistive technologies to interpret the content more effectively. Tags like <nav>, <header>, and <main> help users with disabilities navigate and understand the page’s structure, making it more accessible.
+
+Importance for SEO:
+Semantic HTML helps search engines understand and index the content of a webpage, improving its visibility and ranking. Elements like <article> and <h1> indicate important content and its structure, aiding search engines in determining the relevance of the page.
+
+Examples of Semantic Elements:
+Common semantic elements include <header>, <footer>, <article>, <section>, <nav>, <aside>, and <main>. These elements define specific areas of the webpage, enhancing its structure for both users and search engines.

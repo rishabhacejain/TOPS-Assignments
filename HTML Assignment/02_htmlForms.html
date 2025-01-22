@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Contact Form</h1>
+    <form action="#" method="post">
+    <fieldset>
+
+            <div>
+                <label for="fname">Full Name</label>
+                <input type="text" name="fname" id="fname" required><br><br>
+            </div>
+            <hr>
+            
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+            </div>
+
+           <hr>
+            
+            <div>
+                <label for="mobile">Mobile Number</label>
+                <input type="text" name="mobile" minlength="10" maxlength="10" pattern="[6-9][0-9]{9}" required><br><br>
+            </div> 
+            <hr>
+
+            <label for="subject">Subject</label>
+            <select name="subject" id="subject" required>
+                <option value="-1">------Select Subject------</option>
+                <option value="Java">JAVA</option>
+                <option value="Phython">Phython</option>
+                <option value="PHP">PHP</option>
+                <option value="CPP">CPP</option>
+                <option value="C#">C#</option>  
+            </select>
+            <br><br>
+            
+        <label for="msg">Message</label>
+        <textarea name="msg" id="msg" placeholder="Write Your Message Here"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+        
+        
+    </fieldset>
+
+        
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>
