@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.container{
+    background-color: lightblue;
+    width: 700px;
+    margin: 0 400px;
+    align-items: center;
+    height: 500px;
+    border: 2px solid black;
+
+
+}
+.container h1{
+
+margin-left: 250px;
+
+
+
+}
+label{
+
+    
+    padding: 50px;
+    margin-left: 10;
+    font-weight: bold;
+    
+
+
+}
+input{
+padding: 5px;
+width: 250px;
+
+}
+#fname{
+    margin-left: 10px  
+
+}
+#email{
+    margin-left: 40px   
+}
+#mobile{
+    margin-left: -28px    
+}
+select{
+    margin-left: 30px;
+    padding: 5px; 
+    width: 260px; 
+}
+
+#msglable{
+    text-align: left;
+    margin: 0px 
+}
+
+#msg{
+ margin: 0px 182px;
+ padding: 2px;
+ width: 260px;
+ height: 100px;
+ box-sizing: border-box;
+ resize: vertical;
+}
+
+button{
+
+    margin-left: 210px;
+    width: 200px;
+    background-color: aquamarine;
+    border-radius: 25px;
+    height: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+
+}
+
+button:hover{
+    
+    margin-left: 190px;
+    width: 250px;
+    background-color: blanchedalmond;
+    border-radius: 25px;
+    height: 40px;
+    transition: all 0.5 ease ;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+
+}
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Form</h1>
+
+        <form action="#" method="post">
+        
+                
+                <div>
+                    <label for="fname">Full Name</label>
+                    <input type="text" name="fname" id="fname" required><br><br>
+                </div>
+                
+                
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    required><br><br>
+                </div>
+                
+            
+            
+            <div>
+                <label for="mobile">Mobile Number</label>
+                <input type="text" name="mobile"   id="mobile"   minlength="10" maxlength="10" pattern="[6-9][0-9]{9}" required><br><br>
+            </div>
+            
+            
+            <label for="subject">Subject</label>
+            <select name="subject" id="subject" required>
+                <option value="-1">------Select Subject------</option>
+                <option value="Java">JAVA</option>
+                <option value="Phython">Phython</option>
+                <option value="PHP">PHP</option>
+                <option value="CPP">CPP</option>
+                <option value="C#">C#</option>
+            </select>
+            <br><br>
+            
+            <label for="msgs" id="msglable">Message</label>
+            <textarea name="msgs" id="msg" placeholder="Write Your Message Here"></textarea>
+            <br><br>
+            <button type="submit">Submit</button>
+            
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </form>
+</div>
+</body>
+
+</html>

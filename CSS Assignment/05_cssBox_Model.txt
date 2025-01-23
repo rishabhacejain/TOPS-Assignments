@@ -1,0 +1,31 @@
+Question 1: Explain the CSS box model and its components (content, padding, border,
+margin). How does each affect the size of an element?
+
+The CSS box model is a fundamental concept for layout design, determining how elements are displayed on a web page. It consists of four key components: content, padding, border, and margin.
+
+Content: This is the actual area where text, images, or other elements appear. It defines the size of the element’s core content (width and height).
+
+Padding: Padding is the space between the content and the border. It provides breathing room inside the element, pushing the content away from the border. Increasing padding increases the total space occupied by the element.
+
+Border: The border wraps around the padding (if any) and content. It has a set width, style, and color. Adding a border increases the overall size of the element.
+
+Margin: Margin is the space outside the border, separating the element from other elements. It does not affect the element's internal layout but controls the space between the element and its surrounding content. Increasing the margin moves the element further away from others.
+
+Each of these components affects the overall size of an element. By default, the total width and height of an element are calculated as:
+
+Total width = content width + left padding + right padding + left border + right border + left margin + right margin
+Total height = content height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+Thus, increasing padding, border, or margin expands the total size of the element on the page.
+
+**************************************************************************************************************************
+
+Question 2: What is the difference between border-box and content-box box-sizing in
+CSS?Which is the default?
+
+The box-sizing property in CSS determines how the width and height of an element are calculated, particularly how the padding and border are factored into the total size of an element.
+
+content-box (Default): In this model, the width and height properties apply only to the content of the element. Padding and border are added outside of the element's specified width and height, meaning they increase the total size of the element. For example, if an element has a width of 200px, 20px padding, and a 2px border, the total width will be 200px (content) + 40px (padding) + 4px (border), resulting in a total width of 244px.
+
+border-box: In this model, the width and height properties include padding and border. The total size of the element is constrained to the specified width and height, and padding and border are contained within those dimensions. For example, if an element has a width of 200px, 20px padding, and a 2px border, the content area is adjusted to fit within the total 200px width, making the content area smaller to accommodate the padding and border.
+
+Default: The default value is content-box. This means that padding and borders are added outside the specified width and height, which can sometimes make layout calculations more complex when trying to maintain exact dimensions for elements.

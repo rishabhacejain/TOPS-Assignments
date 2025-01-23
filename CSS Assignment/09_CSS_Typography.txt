@@ -1,0 +1,32 @@
+Question 1: Explain the difference between web-safe fonts and custom web fonts. Why
+might you use a web-safe font over a custom font?
+Answer:
+Web-safe fonts are pre-installed on most devices and operating systems, ensuring consistent display across various
+platforms without requiring additional downloads. Examples include Arial, Times New Roman, and Courier New. Custom web
+fonts, like those from Google Fonts or Adobe Fonts, are downloaded from a server and offer a broader range of styles and
+design options.
+
+Web-safe fonts are used for performance and compatibility, as they load quickly and don't rely on external resources.
+Custom web fonts, while visually appealing, may increase page load times and require a fallback in case they fail to
+load. Choosing between them depends on the balance between design aesthetics and performance needs.
+
+**********************************************************************************************************************************
+Question 2: What is the font-family property in CSS? How do you apply a custom Google
+Font to a webpage?
+
+The font-family property in CSS specifies the typeface for text on a webpage. You can list multiple fonts as a fallback
+system, with the browser using the first available one. For example:
+
+font-family: 'Roboto', 'Arial', sans-serif;
+
+To apply a custom Google Font, first, include the font's link in the <head> of your HTML from Google Fonts. For example:
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    Then, use the font in your CSS:
+
+    body {
+    font-family: 'Roboto', sans-serif;
+    }
+
+    This ensures the webpage uses the custom font if available, with fallback fonts as a backup.

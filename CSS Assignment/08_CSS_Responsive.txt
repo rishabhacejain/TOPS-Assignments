@@ -1,0 +1,23 @@
+Question 1: What are media queries in CSS, and why are they important for responsive
+design?
+Answer:
+Media queries in CSS are a powerful tool used to apply styles conditionally based on the characteristics of the user's device, such as screen size, resolution, orientation, or aspect ratio. They are essential for creating responsive designs, allowing websites to adapt seamlessly to different devices like desktops, tablets, and mobile phones. Media queries enable developers to specify breakpoints, at which specific CSS rules are applied, ensuring the layout, font sizes, and other design elements adjust appropriately. This ensures better user experience, accessibility, and consistency across a wide range of devices.
+**********************************************************************************************************************************
+
+Question 2: Write a basic media query that adjusts the font size of a webpage for screens
+smaller than 600px.
+
+
+body {
+    font-size: 16px;
+}
+
+
+@media (max-width: 600px) {  /* Media Screen smaller than 600px*/
+    body {
+        font-size: 14px;
+    }
+}
+
+The default font size is set to 16px for larger screens.
+When the screen width is 600px or smaller, the font size is reduced to 14px for better readability and layout optimization on smaller devices.

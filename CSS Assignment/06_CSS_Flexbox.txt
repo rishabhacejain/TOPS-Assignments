@@ -1,0 +1,41 @@
+Question 1: What is CSS Flexbox, and how is it useful for layout design? Explain the terms
+flex-container and flex-item.
+
+CSS Flexbox is a layout model that allows for the easy arrangement of items within a container, making it ideal for creating responsive and flexible designs. It simplifies the process of aligning and distributing space among elements within a container, both vertically and horizontally, even when the sizes of the items are unknown or dynamic. Flexbox is especially useful for building complex layouts without using floats or positioning, providing a more intuitive way to align and space elements.
+
+Flex-container: This is the parent element that holds the flex items. It is defined by setting the container's display property to flex. The flex container establishes a flex formatting context, meaning the direct children (flex items) are arranged according to flexbox rules.
+
+Flex-item: These are the direct children of the flex container. Flex items are the elements that are arranged and aligned within the flex container using various properties such as flex-grow, flex-shrink, and flex-basis. They can be manipulated individually to control their size, positioning, and spacing relative to other flex items in the container.
+
+************************************************************************************************************************************************************
+
+Question 2: Describe the properties justify-content, align-items, and flex-direction used
+inFlexbox.
+
+1. justify-content:
+The justify-content property in Flexbox is used to align flex items horizontally along the main axis (the direction determined by flex-direction). It defines how the extra space within the flex container is distributed among the items. For example:
+
+flex-start aligns items to the start of the container (default).
+flex-end aligns items to the end of the container.
+center centers the items.
+space-between evenly distributes items, with space only between them.
+space-around and space-evenly provide equal spacing around the items with slight variations.
+
+2. align-items:
+The align-items property aligns flex items vertically along the cross axis (perpendicular to the main axis). It determines how items are positioned relative to the container's height. Examples include:
+
+stretch (default): Stretches items to fill the container's cross-axis.
+flex-start: Aligns items to the start of the cross-axis.
+flex-end: Aligns items to the end of the cross-axis.
+center: Centers items along the cross-axis.
+baseline: Aligns items based on their text baselines.
+
+3. flex-direction:
+The flex-direction property specifies the direction of the main axis, determining how flex items are placed within the container. It can be set to:
+
+row (default): Items are laid out in a horizontal row, left to right.
+row-reverse: Items are laid out in a horizontal row, right to left.
+column: Items are laid out in a vertical column, top to bottom.
+column-reverse: Items are laid out in a vertical column, bottom to top.
+By combining these properties, you can achieve precise control over the alignment and flow of elements in a layout.
+

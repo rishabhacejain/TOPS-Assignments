@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+
+            background: radial-gradient(circle, red 0%, orange 50%);
+
+        }
+
+
+
+
+        .profileCard {
+            padding: 20px;
+            position: absolute;
+            left: 550px;
+            top: 50px;
+            max-width: 300px;
+            background-color: brown;
+            border-radius: 25px;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+
+
+        }
+
+        .profileCard:hover {
+            background-color: #ffe6e6;
+            border: 2px solid brown;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
+            
+        }
+
+        .profileCard {
+            animation: slideIn 1s ease-out;
+        
+        }
+
+        .profilePic img {
+            padding: 3px;
+            border: 5px solid red;
+            border-radius: 50%;
+            position: relative;
+            margin: 20px 50px;
+            height: 200px;
+            width: 200px;
+            box-sizing: border-box;
+
+        }
+
+        .profilePic img:hover {
+
+
+            border: 10px solid red;
+            box-shadow: 0 0 15px orangered;
+            transition: all .2s ease;
+
+
+        }
+
+        .userBio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+
+
+        }
+
+        .userBio h1 {
+            text-align: center;
+        }
+
+        .userBio p {
+            text-align: center;
+        }
+
+        .userBio button {
+
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+    
+
+        }
+
+        .userBio button:hover {
+            
+            
+            background-color: brown;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profileCard">
+            <div class="profilePic">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+
+
+
+            </div>
+            <div class="userBio">
+                <h1>Rishabh Jain</h1>
+                <p>I am Rishab Jain, a passionate individual who loves to sing, code, and repeat the cycle with a good
+                    night's
+                    sleep. I enjoy exploring creativity and technology while balancing productivity and leisure.</p>
+
+                <button>Follow </button>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

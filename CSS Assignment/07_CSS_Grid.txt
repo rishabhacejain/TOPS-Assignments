@@ -1,0 +1,47 @@
+
+Question 1: Explain CSS Grid and how it differs from Flexbox. When would you use Grid over
+Flexbox?
+
+CSS Grid Explanation
+CSS Grid is a powerful layout system in CSS designed to create two-dimensional layouts. It allows developers to position elements both in rows and columns simultaneously, making it ideal for complex and structured layouts. With properties like grid-template-rows and grid-template-columns, you can define the structure of a grid and easily place items within it using grid-area or shorthand properties.
+
+Difference Between CSS Grid and Flexbox
+While both CSS Grid and Flexbox are modern layout tools, they differ in their primary purpose.
+
+CSS Grid: Best for two-dimensional layouts, as it works on both rows and columns. It is suitable for creating complete webpage layouts like dashboards, image galleries, or grids of content.
+Flexbox: Focuses on one-dimensional layouts, working in either a row or column direction. It is perfect for aligning and distributing space among items in a single axis, such as navigation bars or button groups.
+
+When to Use Grid Over Flexbox
+Use CSS Grid when your layout requires precise control over rows and columns, such as creating a grid-based design or structured layouts with overlapping elements. Use Flexbox when dealing with simpler, linear layouts or when you need flexibility for dynamic alignment of items along a single axis. Combining both tools is common to achieve efficient and responsive designs.
+
+**********************************************************************************************************************************
+
+Question 2: Describe the grid-template-columns, grid-template-rows, and grid-gap
+properties. Provide examples of how to use them.
+
+grid-template-columns
+The grid-template-columns property defines the number of columns in a CSS Grid layout and their widths. You can specify fixed values (e.g., px, em), percentages, or use flexible units like fr (fractional units). For example:
+
+grid-template-columns: 1fr 2fr 1fr;
+
+This creates three columns where the middle column takes up twice the space of the others.
+
+grid-template-rows
+The grid-template-rows property defines the number of rows in the grid and their heights. Similar to columns, you can use fixed or flexible units. For instance:
+
+grid-template-rows: 100px auto 50px;
+
+This creates three rows: the first is 100px tall, the second adjusts to its content, and the third is 50px tall.
+
+grid-gap
+The grid-gap property sets the spacing between rows and columns in the grid. It simplifies spacing management without affecting the grid items' size. You can specify gaps for both rows and columns at once:
+
+grid-gap: 20px;
+
+Or define row and column gaps separately:
+
+row-gap: 20px; 
+column-gap: 10px;
+
+These properties are essential for structuring and spacing items in a CSS Grid layout, ensuring a clean and organized design.
+

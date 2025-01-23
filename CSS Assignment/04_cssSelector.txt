@@ -1,0 +1,90 @@
+Question 1: What is a CSS selector? Provide examples of element, class, and ID selectors.
+
+Answer: A CSS selector is a pattern used to select and style specific HTML elements on a web page. It determines which HTML elements the CSS rules will apply to. Selectors can target elements based on their type, class, ID, attributes, or their position in the document structure.
+
+Element Selector:
+This selector targets all HTML elements of a specific type. For example, the selector p applies styles to all <p> elements on a page.
+
+Example:
+p {
+    color: blue;
+    font-size: 16px;
+}
+
+
+Class Selector:
+A class selector targets elements with a specific class attribute. Classes can be reused across multiple elements. The selector is written with a period (.) followed by the class name.
+
+Example:
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
+ID Selector:
+An ID selector targets a single element with a unique id attribute. The selector is written with a hash (#) followed by the ID name. IDs should be unique for each element on the page.
+
+Example:
+#header {
+    text-align: center;
+    font-size: 24px;
+}
+
+These selectors allow developers to apply specific styles to elements efficiently, making web pages visually appealing and easier to manage.
+
+
+******************************************************************************************************************************
+
+Question 2: Explain the concept of CSS specificity. How do conflicts between multiple styles
+get resolved?
+
+Answer: CSS specificity is a set of rules that determines which styles are applied to an element when multiple conflicting CSS rules target the same element. Specificity is calculated based on the type of selectors used, and the more specific the selector, the higher its priority.
+
+Specificity is represented as a four-part value: 
+
+inline styles > IDs > classes/attributes/pseudo-classes > elements. 
+
+Inline styles (added directly to an element via the style attribute) have the highest specificity, followed by ID selectors, class selectors, and element selectors.
+
+Example:
+
+Inline style: style="color: red;" (highest priority).
+ID selector: #header { color: blue; }.
+Class selector: .highlight { color: green; }.
+Element selector: p { color: black; }.
+
+Resolving Conflicts:
+When two or more rules target the same element, the rule with higher specificity is applied. If two rules have the same specificity, the one that appears last in the CSS file takes precedence (source order).
+
+Example:
+<p id="para" class="highlight" style="color: red;">Hello!</p>
+
+In this case, the inline style (color: red;) will override any #para or .highlight rules.
+
+Understanding specificity helps developers write efficient and predictable CSS, ensuring the correct styles are applied without unnecessary overrides.
+
+******************************************************************************************************************************
+
+Question 3: What is the difference between internal, external, and inline CSS? Discuss the
+advantages and disadvantages of each approach.
+
+Answer:
+Internal, external, and inline CSS are three ways to apply styles to a web page, each with its own advantages and disadvantages:
+
+Internal CSS:
+Internal CSS is written within a <style> tag inside the <head> section of an HTML document. It is used to style a single web page.
+Advantages: Easy to maintain for small projects or single pages, and no external file is required.
+Disadvantages: Not reusable across multiple pages and can increase the size of the HTML file, slowing down page load times.
+
+External CSS:
+External CSS involves writing styles in a separate .css file and linking it to the HTML document using a <link> tag in the <head>.
+Advantages: Styles are reusable across multiple pages, making it efficient for large projects. It also keeps HTML files clean and reduces their size.
+Disadvantages: Requires an additional HTTP request to load the CSS file, which can slightly delay rendering if the file isn't cached.
+
+Inline CSS:
+Inline CSS is written directly within the style attribute of an HTML element.
+Advantages: Allows quick application of unique styles to specific elements without affecting others.
+Disadvantages: Not reusable, leads to cluttered HTML, and reduces maintainability. It also has the highest specificity, making it harder to override.
+
+Choosing the right CSS approach depends on the project size and requirements. External CSS is preferred for scalability, while internal or inline CSS may be used for smaller or temporary projects.
