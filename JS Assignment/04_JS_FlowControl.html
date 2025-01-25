@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .task-section {
+            display: none; 
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Select Any One</h1>
+        <button onclick="showTask(1)">Task 1: Check Number</button>
+        <button onclick="showTask(2)">Task 2: Check Day</button>
+    </div>
+
+    <div id="task1" class="task-section">
+        <label for="num">Enter The Number</label>
+        <input type="text" name="num" id="num">
+        <div class="output" id="task1-output"> </div>
+        <button onclick="task1()">Check number</button>
+    </div>
+
+    <div id="task2" class="task-section">
+        <label for="day">Enter The Day Number</label>
+        <input type="text" name="day" id="day">
+        <div class="output" id="task2-output"> </div>
+        <button onclick="task2()">Check Day</button>
+    </div>
+
+
+
+    <script>
+
+        function showTask(taskNumber) {
+            document.getElementById("task1").style.display = "none";
+            document.getElementById("task2").style.display = "none";
+
+            if (taskNumber === 1) {
+                document.getElementById("task1").style.display = "block";
+
+            }
+            else if (taskNumber === 2) {
+                document.getElementById("task2").style.display = "block";
+
+            }
+        }
+
+        function task1() {
+            let num = document.getElementById("num").value;
+            let result = "";
+
+            if (num === "") {
+                result = "Please enter a valid number.";
+            } else {
+                if (num > 0) {
+                    result = "The number is positive.";
+                } else if (num < 0) {
+                    result = "The number is negative.";
+                } else {
+                    result = "The number is zero.";
+                }
+            }
+            document.getElementById("task1-output").innerHTML = result;
+        }
+        function task2() {
+            let day = document.getElementById("day").value;
+            let result = "";
+
+            if (day === "") {
+                result = "Please enter a valid day number.";
+            } else {
+                switch (day) {
+                    case "1":
+                        result = "Today is Monday";
+
+                        break;
+                    case "2":
+                        result = "Today is Tuesday";
+
+                        break;
+                    case "3":
+                        result = "Today is Wednesday.";
+                        break;
+                    case "4":
+                        result = "Today is Thursday.";
+                        break;
+                    case "5":
+                        result = "Today is Friday.";
+                        break;
+                    case "6":
+                        result = "Today is Saturday.";
+                        break;
+                    case "7":
+                        result = "Today is Sunday.";
+                        break;
+                    default:
+                        result = "Please enter a number between 1 and 7.";
+                        break;
+                }
+
+
+
+            }
+
+
+
+            document.getElementById("task2-output").innerHTML = result;
+        }
+
+
+    </script>
+
+</body>
+
+</html>

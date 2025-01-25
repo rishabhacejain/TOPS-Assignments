@@ -1,0 +1,64 @@
+Question 1: What are the different types of operators in JavaScript? Explain with examples.
+o Arithmetic operators
+o Assignment operators
+o Comparison operators
+o Logical operators
+
+In JavaScript, operators are special symbols or keywords that perform operations on values or variables. There are several types of operators:
+
+Arithmetic Operators:
+
+These operators perform mathematical operations on numbers.
+Examples:
++ (addition): 5 + 3 results in 8
+- (subtraction): 5 - 3 results in 2
+* (multiplication): 5 * 3 results in 15
+/ (division): 6 / 3 results in 2
+% (modulus): 5 % 3 results in 2
+++ (increment): let x = 5; x++ results in 6
+-- (decrement): let x = 5; x-- results in 4
+Assignment Operators:
+
+These operators are used to assign values to variables.
+Examples:
+= (simple assignment): let x = 5; assigns 5 to x.
++= (add and assign): x += 2 is equivalent to x = x + 2.
+-= (subtract and assign): x -= 2 is equivalent to x = x - 2.
+*= (multiply and assign): x *= 2 is equivalent to x = x * 2.
+/= (divide and assign): x /= 2 is equivalent to x = x / 2.
+Comparison Operators:
+
+These operators are used to compare values and return a Boolean result.
+Examples:
+== (equal to): 5 == 5 results in true.
+=== (strict equal to, checks both value and type): 5 === '5' results in false.
+!= (not equal to): 5 != 3 results in true.
+> (greater than): 5 > 3 results in true.
+< (less than): 5 < 3 results in false.
+>= (greater than or equal to): 5 >= 5 results in true.
+<= (less than or equal to): 5 <= 3 results in false.
+Logical Operators:
+
+These operators are used to perform logical operations, typically used with Boolean values.
+Examples:
+&& (logical AND): true && false results in false.
+|| (logical OR): true || false results in true.
+! (logical NOT): !true results in false.
+These operators are fundamental to JavaScript and are used to perform calculations, assign values,compare variables, and make logical decisions in your programs.
+
+******************************************************************************************************************************************************************************************************************************************************************************************
+
+Question 2: What is the difference between == and === in JavaScript?
+In JavaScript, == (loose equality) and === (strict equality) are comparison operators used to compare values, but they differ in how they handle data types:
+
+== (Loose Equality):
+
+The == operator compares two values for equality, but it performs type coercion if the values are of different types. This means JavaScript will attempt to convert one or both values to a common type before comparing them.
+Example:
+'5' == 5 results in true because the string '5' is coerced to the number 5 before comparison.
+=== (Strict Equality):
+
+The === operator compares both the value and the type without performing any type coercion. The comparison is only true if the values are of the same type and have the same value.
+Example:
+'5' === 5 results in false because one is a string and the other is a number.
+In summary, use === for a more reliable and strict comparison when you want to avoid unexpected results due to type coercion.

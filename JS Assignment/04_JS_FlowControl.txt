@@ -1,0 +1,51 @@
+Question 1: What is control flow in JavaScript? Explain how if-else statements work with
+an example.
+Control flow in JavaScript refers to the order in which instructions are executed in a program. It helps developers control decision-making and execution based on conditions. The if-else statement is a common control flow structure that executes a block of code if a specified condition is true and another block if the condition is false. For example:
+
+let number = 5;
+if (number > 0) {
+    console.log("The number is positive.");
+} else {
+    console.log("The number is not positive.");
+}
+In this example, the condition number > 0 is checked. If it evaluates to true, the message "The number is positive" is logged. Otherwise, "The number is not positive" is logged.
+
+***********************************************************************************************************************************************************************************************************************************************************
+Question 2: Describe how switch statements work in JavaScript. When should you use a
+switch statement instead of if-else?
+
+A switch statement in JavaScript evaluates an expression and executes the block of code that matches the value of the expression. It uses case clauses for different conditions and an optional default clause for cases where no match is found. For example:
+
+let day = 2;
+switch (day) {
+                    case "1":
+                        result = "Today is Monday";
+
+                        break;
+                    case "2":
+                        result = "Today is Tuesday";
+
+                        break;
+                    case "3":
+                        result = "Today is Wednesday.";
+                        break;
+                    case "4":
+                        result = "Today is Thursday.";
+                        break;
+                    case "5":
+                        result = "Today is Friday.";
+                        break;
+                    case "6":
+                        result = "Today is Saturday.";
+                        break;
+                    case "7":
+                        result = "Today is Sunday.";
+                        break;
+                    default:
+                        result = "Invalid Day!!! Please enter a number between 1 and 7.";
+                        break;
+}
+
+Here, if day is 2, "Tuesday" is logged. The break statement prevents execution from falling through to subsequent cases.
+
+Switch statements are preferred over if-else when there are multiple conditions to evaluate against a single variable or expression, making the code more readable and organized.

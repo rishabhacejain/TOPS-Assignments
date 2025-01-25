@@ -1,0 +1,67 @@
+Question 1: What are functions in JavaScript? Explain the syntax for declaring and calling a
+function
+
+In JavaScript, a function is a block of code designed to perform a particular task. Functions allow you to organize and reuse code, making it more modular and manageable. Functions can accept parameters (inputs) and return a value (output), but they are not required to do so.
+
+Syntax for Declaring a Function:
+To declare a function, you use the function keyword, followed by the function name, parentheses (for parameters), and a block of code inside curly braces:
+
+function functionName(parameters) {
+    // code to be executed
+}
+ Example:
+  
+  function greet(name) {
+    console.log("Hello, " + name);
+
+}
+
+Syntax for Calling a Function:
+To call (invoke) a function, you simply use its name followed by parentheses, optionally passing arguments if the function requires them:
+
+greet("John");
+
+In this example, the greet function is called with the argument "John", and it prints "Hello, John" to the console.Therefore Functions are defined using function keyword You can pass values to functions via parameters and get a result via the return keyword as per your requirement.Functions help in reducing code repetition and improving maintainability.
+
+************************************************************************************************************
+
+Question 2: What is the difference between a function declaration and a function expression?
+
+In JavaScript, the difference between a function declaration and a function expression lies in how the function is defined and how it can be invoked.
+
+Function Declaration: A function declaration defines a function with the function keyword, and the function is hoisted, meaning it is available for use throughout the entire scope, even before its actual declaration in the code. The syntax is:
+
+function greet() {
+    console.log("Hello!");
+}
+
+You can call this function before the declaration, and it will work as expected because of hoisting.
+
+Function Expression: A function expression involves assigning a function to a variable or constant. It is not hoisted, meaning you can only call it after the function is defined in the code. Function expressions can also be anonymous (without a name) and are often used in situations like callbacks or event handlers. The syntax is:
+
+const greet = function() {
+    console.log("Hello!");
+};
+
+You can only invoke the greet function after its definition, as it behaves like any other value assigned to a variable.So basic Difference is in Hoisting: Function declarations are hoisted, while function expressions are not. And Function declarations are typically used for standard functions, while function expressions are often used when you need to treat functions as first-class objects (e.g., passing functions as arguments).
+
+*************************************************************************************************************************
+
+Question 3: Discuss the concept of parameters and return values in functions.
+In JavaScript, parameters are the values or variables that are passed into a function when it is called. They act as placeholders for the actual values (arguments) provided during the function call. When defining a function, you can specify parameters in the parentheses after the function name. These parameters are used within the function to perform operations. For example:
+
+function add(a, b) {
+    return a + b;
+}
+
+In this case, a and b are parameters, and the function add takes two arguments when called.
+
+Return values refer to the data or result that a function sends back after performing its task. The return statement is used to specify what value should be sent back to the calling code. Once a return statement is executed, the function terminates and no further code inside the function is executed. For instance:
+
+let result = add(5, 3); // result will hold the value 8
+
+In this example, the function add returns the sum of a and b, and the calling code receives this returned value and stores it in the variable result.
+
+**********************************************************************************
+
+

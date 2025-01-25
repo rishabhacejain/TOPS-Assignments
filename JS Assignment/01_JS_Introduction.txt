@@ -1,0 +1,16 @@
+Question 1: What is JavaScript? Explain the role of JavaScript in web development.
+
+JavaScript is a versatile, high-level programming language primarily used to create interactive and dynamic content on websites. It enables developers to enhance user experience by adding functionalities such as animations, form validations, dropdown menus, and real-time updates without reloading the page. JavaScript works seamlessly with HTML and CSS, forming the foundation of modern web development. Its ability to run on both the client side (in the browser) and the server side (using platforms like Node.js) makes it a crucial tool for building responsive and interactive web applications.
+******************************************************************************************************************************
+
+Question 2: How is JavaScript different from other programming languages like Python or
+Java?
+
+JavaScript differs from programming languages like Python or Java in its primary use, execution environment, and syntax. It is primarily designed for web development and runs directly in web browsers, making it ideal for creating interactive and dynamic web pages. Unlike Python and Java, which are general-purpose languages used in diverse fields such as data science, backend development, and desktop applications, JavaScript excels in front-end development and is often paired with HTML and CSS. JavaScript is interpreted and event-driven, while Java is compiled, and Python emphasizes simplicity and readability. Additionally, JavaScript's asynchronous capabilities, such as handling events and promises, make it particularly suited for web interactions.
+
+******************************************************************************************************************************
+
+Question 3: Discuss the use of <script> tag in HTML. How can you link an external JavaScript
+file to an HTML document?
+
+The <script> tag in HTML is used to embed JavaScript code directly into an HTML document or to link an external JavaScript file. When embedding JavaScript, the code is written between the opening and closing <script> tags. To link an external JavaScript file, the src attribute of the <script> tag is used, specifying the file's URL or path (e.g., <script src="script.js"></script>). It's a good practice to place the <script> tag just before the closing </body> tag to ensure the page content loads before the script executes, enhancing performance and avoiding potential errors.

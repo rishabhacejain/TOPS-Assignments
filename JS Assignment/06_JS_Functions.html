@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+
+            margin-top: 50px;
+
+
+
+        }
+
+        .container h1 {
+            color: #333;
+
+
+
+        }
+
+        .task-section {
+            display: none;
+            margin: 20px auto;
+            text-align: center;
+            width: 50%;
+            padding: 20px;
+
+        }
+
+
+
+        .output {
+
+            margin-top: 20px;
+            font-size: 55px;
+
+
+        }
+
+        button {
+
+            padding: 15px;
+            box-sizing: border-box;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: chocolate;
+            color: white;
+            transition: all 1s ease;
+
+        }
+
+        button:hover {
+
+
+
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: chocolate;
+            color: #333
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Select Any One</h1>
+        <button onclick="showTask(1),task1()">Task 1: </button>
+        <button onclick="showTask(2)">Task 2:</button>
+    </div>
+
+    <div id="task1" class="task-section">
+        <button onclick="task1()">Press Me and Enter you Name</button>
+        <div class="output" id="task1-output"> </div>
+    </div>
+
+    <div id="task2" class="task-section">
+        <label for="numInput">Enter Two numbers</label>
+        <input type="text" name="num1" id="num1">
+        <input type="text" name="num2" id="num2">
+        <button onclick="task2()">Sum of Two Num</button>
+
+        <div class="output" id="task2-output"> </div>
+    </div>
+
+
+
+    <script>
+
+        function showTask(taskNumber) {
+            document.getElementById("task1").style.display = "none";
+            document.getElementById("task2").style.display = "none";
+
+            if (taskNumber === 1) {
+                document.getElementById("task1").style.display = "block";
+
+            }
+            else if (taskNumber === 2) {
+                document.getElementById("task2").style.display = "block";
+
+            }
+        }
+
+        function task1() {
+
+            let result = "";
+            let input;
+
+            input = prompt("Enter Your Name here")
+            if(input == null || input == ""){
+
+                window.alert("Please Enter Valid Name");
+            }
+            else{   
+                result = "Hello," + input;
+            }
+
+
+
+
+
+            document.getElementById("task1-output").innerHTML = result;
+        }
+    
+        function task2() {
+             
+                let num1 = parseInt(document.getElementById("num1").value);
+                let num2 = parseInt(document.getElementById("num2").value);
+
+            let sum = num1+num2;
+            
+            let result = "";
+
+
+
+            document.getElementById("task2-output").innerHTML = result +sum;
+        }
+
+
+    </script>
+
+</body>
+
+</html>

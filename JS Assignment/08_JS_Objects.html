@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="car(1)">Car 1</button>
+    <button onclick="car(2)">Car 2</button>
+
+    <div id= output class="output"></div>
+
+
+
+    <script>
+     function car(number){
+        let output = "";
+
+        if(number == 1){
+            let car = {
+                brand: "Toyota",
+                model: "Corolla",
+                year: 2020
+            };
+
+            document.getElementById("output").innerHTML = output+=" Brand Name:"+ car.brand;
+            
+            document.getElementById("output").innerHTML = output+=" Model Name:"+ car.model;
+
+
+        }
+        else if(number == 2){
+
+            let car = {
+                brand: "Honda",
+                model: "Civic",
+                year: 2020
+            };
+            document.getElementById("output").innerHTML = output += " Brand Name:" + car.brand;
+
+            document.getElementById("output").innerHTML = output += " Model Name:" + car.model;
+        }
+
+
+     }
+
+
+
+
+    </script>
+</body>
+</html>

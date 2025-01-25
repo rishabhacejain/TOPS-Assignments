@@ -1,0 +1,77 @@
+
+Question 1: What are variables in JavaScript? How do you declare a variable using var, let,
+and const?
+
+In JavaScript, variables are used to store and manage data values that can be referenced and manipulated throughout a program. Variables can be declared using the keywords var, let, and const, each with different rules and use cases.
+
+var: It was the original way to declare variables. Variables declared with var have a function scope, meaning they are accessible anywhere within the function they are defined in. They can also be re-declared and updated.
+
+let: Introduced in ES6, let allows block-scoped declarations, meaning the variable is limited to the block, statement, or expression where it is declared. It is safer than var as it prevents accidental re-declarations within the same scope.
+
+const: Also introduced in ES6, const is used to declare variables whose values cannot be reassigned after they are initialized. Like let, it is block-scoped, but the value assigned to a const variable is immutable (though objects or arrays declared with const can still have their properties or contents modified).
+
+Using the appropriate keyword ensures better control over variable scope and behavior in a program.
+
+******************************************************************************************************************************************************************************************************************************************************************************************
+
+Question 2: Explain the different data types in JavaScript. Provide examples for each
+
+JavaScript has several data types that fall into two categories: primitive and non-primitive.
+
+Primitive Data Types:
+
+String: Represents text enclosed in quotes (single or double). Example: let name = "JavaScript";.
+Number: Represents numeric values, including integers and decimals. Example: let age = 25;.
+Boolean: Represents true or false values. Example: let isActive = true;.
+Undefined: A variable declared but not assigned a value. Example: let value;.
+Null: Represents the intentional absence of any value. Example: let data = null;.
+Symbol: Represents unique, immutable values, mainly used as object keys. Example: let id = Symbol("id");.
+BigInt: Represents integers larger than the Number type can safely handle. Example: let largeNumber = 123456789012345678901234567890n;.
+Non-Primitive Data Types:
+
+Object: A collection of key-value pairs. Example: let person = { name: "Rishabh", age: 30 };.
+Array: A special type of object for ordered data. Example: let colors = ["red", "blue", "green"];.
+Function: A reusable block of code. Example: function greet() { console.log("Hello!"); }.
+Understanding these data types is crucial for writing efficient and error-free JavaScript programs.
+
+*********************************************************************************************************************************************
+Question 3: What is the difference between undefined and null in JavaScript?
+
+Difference Between Undefined and Null in JavaScript
+
+Undefined:
+
+Definition: undefined means a variable has been declared but has not been assigned a value.
+Default Behavior: If no value is explicitly assigned to a variable, it automatically gets the value undefined.
+
+Example
+let x; // Variable declared but not initialized
+console.log(x); // Output: undefined
+
+Type: The typeof undefined is "undefined".
+
+Null:
+
+Definition: null represents the intentional absence of any value. It is explicitly assigned by the developer to signify "no value."
+Purpose: Used to reset or clear the value of a variable.
+Example:
+
+let y = null; // Explicitly assigned null
+console.log(y); // Output: null
+
+Type: The type of null is "object" .
+
+Key Differences:
+Usage:
+
+Use undefined for uninitialized variables.
+Use null when explicitly setting a variable to "no value."
+Equality:
+
+undefined == null returns true (loose equality).
+undefined === null returns false (strict equality).
+Type:
+
+undefined is its own type.
+null is considered an object.
+
