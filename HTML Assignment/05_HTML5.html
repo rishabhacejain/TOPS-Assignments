@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f4d03f, #e74c3c, #2874a6, #1e8449);
+            background-size: 400% 400%; /* For smooth animations */
+             animation: gradientAnimation 10s ease infinite;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+         @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        audio {
+            margin: 20px auto;
+            display: block;
+            width: 20%;
+        }
+
+        video {
+            display: block;
+            margin: 50px auto;
+            width: 550px;
+            max-width: 100%;
+            border: 5px solid #333;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        canvas {
+            display: block;
+            margin: 200px auto;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+  
+        svg{
+
+            display: block;
+            margin:20px auto ;
+        }
+
+</style>
+<body>
+
+    <h1>Audio and Video  Tag</h1>
+    <audio controls autoplay muted loop>
+        <source src="_Ram Siya Ram_320(PagalWorld.com.se).mp3" type="audio/mp3">
+ 
+
+
+
+    </audio>
+
+    <h2>जय श्री राम</h2>
+    <video autoplay muted  loop width="750px">
+
+        <source src="Untitled video - Made with Clipchamp (1).mp4" type="video/mp4">
+    </video>
+
+<canvas id="myCanvas" width="300px" height="300" style="border:1px solid #000;"> </canvas>
+
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="50" fill="blue" />
+</svg>
+
+
+
+</body>
+</html>

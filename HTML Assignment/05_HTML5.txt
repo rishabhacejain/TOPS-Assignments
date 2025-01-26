@@ -1,0 +1,14 @@
+Question:What is Difference Between html and HTML5
+
+HTML (HyperText Markup Language) is the standard markup language for creating web pages, while HTML5 is the latest version of HTML, introduced with enhanced features to support modern web development. HTML5 offers significant improvements over its predecessors, including native support for multimedia elements like audio and video without requiring external plugins. It also introduces new semantic tags such as <article>, <section>, <header>, and <footer>, making the structure of web pages more meaningful and SEO-friendly. Additionally, HTML5 provides better support for APIs, offline web applications through local storage, and mobile device compatibility. These advancements make HTML5 more powerful and versatile for building dynamic, interactive, and cross-platform web experiences.
+
+Question:What Are the Additional tags used in HTML5?
+
+HTML5 introduced several new tags to improve the structure, semantics, and functionality of web pages. These include structural tags like <header>, <footer>, <article>, and <section> for organizing content, media elements such as <audio>, <video>, and <canvas> for embedding audio, video, and graphics, and form controls like <input type="date">, <input type="email">, and <datalist> for enhanced input options. It also introduced interactive elements such as <details>, <summary>, and <mark> for better user engagement and content presentation, along with embedded content tags like <iframe>, <embed>, and <object>. These improvements aim to make web development more efficient and accessible while enhancing multimedia and interactivity.
+
+
+
+
+
+
+
