@@ -1,0 +1,9 @@
+Question 1: What is the DOM (Document Object Model) in JavaScript? How does JavaScript
+interact with the DOM?
+
+The Document Object Model (DOM) in JavaScript is a structured representation of an HTML or XML document, allowing developers to interact with and manipulate the document's content, structure, and style programmatically. The DOM represents the document as a tree of nodes, where each element, attribute, or piece of text is a node. JavaScript interacts with the DOM by using its built-in methods and properties, enabling tasks like selecting elements (e.g., getElementById, querySelector), modifying content (innerHTML, textContent), changing styles (style), adding or removing elements (appendChild, removeChild), and handling events (addEventListener). This interaction enables dynamic and responsive web pages.
+
+Question 2: Explain the methods getElementById(), getElementsByClassName(), and
+querySelector() used to select elements from the DOM.
+
+The methods getElementById(), getElementsByClassName(), and querySelector() are used to select elements from the DOM. getElementById() retrieves a single element with a specific id attribute, making it ideal for selecting unique elements. getElementsByClassName() returns a live collection of all elements with a specified class name, which can be accessed like an array. Lastly, querySelector() selects the first element that matches a CSS selector, providing flexibility to target elements using IDs, classes, attributes, or other selectors. These methods allow developers to efficiently manipulate specific parts of a webpage.

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+
+            background-color: white;
+         }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="clock"></div>
+
+    <script>
+        setTimeout(() =>{
+            document.body.style.backgroundColor = "lightblue";
+
+
+        },5000);
+
+        function updateClock() {
+                const now = new Date();
+                const hours = now.getHours();
+                const minutes = now.getMinutes();
+                const seconds = now.getSeconds();
+
+
+                
+                document.getElementById("clock").textContent = `${hours}:${minutes}:${seconds}`;
+            }
+
+            setInterval(updateClock, 1000); 
+            updateClock();
+
+
+
+    </script>
+    
+</body>
+</html>

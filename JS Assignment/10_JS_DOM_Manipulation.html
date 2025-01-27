@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanos Snap Effect</title>
+
+    <style>
+        #mypara {
+            text-align: center;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 250px auto;
+        }
+
+        #magicBtn {
+            display: block;
+            margin: -120px auto;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: chocolate;
+            color: white;
+            transition: all 1s ease;
+        }
+
+        #magicBtn:hover {
+            background-color: darkorange;
+            color: black;
+            cursor: pointer;
+            cursor: help;
+            cursor: progress;
+            cursor: url("https://cdn.custom-cursor.com/db/pointer/32/Thanos_Glove_Pointer.png"), auto;
+    
+        }
+
+        .dust {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: rgba(165, 42, 42, 0.8);
+            border-radius: 50%;
+            animation: fadeAndMove 2s forwards;
+        }
+
+        @keyframes fadeAndMove {
+            0% {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: translate(calc(-50px + 100px * var(--random-x)), calc(-50px + 100px * var(--random-y)));
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(calc(-100px + 200px * var(--random-x)), calc(-100px + 200px * var(--random-y)));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p id="mypara">Hello, World!</p>
+    <button class="magicBtn" id="magicBtn" onclick="triggerMagic()">Press Me to See the Magic</button>
+
+    <script>
+        
+        function changeParagraph() {
+            const mypara = document.getElementById("mypara");
+            mypara.textContent = "JavaScript is Fun!!";
+            mypara.style.color = "blue";
+        }
+
+
+        
+        // Create Thanos snap effect
+        function thanosSnap() {
+            const button = document.getElementById("magicBtn");
+            const buttonRect = button.getBoundingClientRect();
+            const particles = 100; // Number of particles for the effect
+
+            for (let i = 0; i < particles; i++) {
+                const dust = document.createElement("div");
+                dust.classList.add("dust");
+
+                // Add random properties for each particle
+                dust.style.setProperty('--random-x', Math.random());
+                dust.style.setProperty('--random-y', Math.random());
+
+                // Position the particle
+                dust.style.left = `${buttonRect.left + buttonRect.width / 2}px`;
+                dust.style.top = `${buttonRect.top + buttonRect.height / 2}px`;
+
+                // Add dust to the document
+                document.body.appendChild(dust);
+
+                // Remove the particle after animation ends
+                dust.addEventListener("animationend", () => dust.remove());
+            }
+
+            // Hide the button
+            button.style.opacity = 0;
+            button.style.pointerEvents = "none";
+        }
+
+        // Combined function to trigger both effects
+        function triggerMagic() {
+            changeParagraph();
+            thanosSnap();
+        }
+    </script>
+</body>
+
+</html>

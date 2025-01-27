@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <Style>
+
+        button {
+
+            display: block;
+            margin: 200px auto;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: chocolate;
+            color: white;
+            transition: all 1s ease;
+
+        }
+
+        button:hover {
+
+
+
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: chocolate;
+            color: #333
+        }
+
+
+
+    </Style>
+
+</head>
+<body>
+    <button id="alertBtn">Click Here</button>
+
+    <script>
+
+        const btn = document.getElementById("alertBtn");
+
+          btn.addEventListener("click",function(){
+            alert("Button Clicked!!!");
+          });
+
+
+
+    </script>
+
+</body>
+</html>
