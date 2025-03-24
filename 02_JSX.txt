@@ -1,0 +1,78 @@
+Question 1: What is JSX in React.js? Why is it used?
+JSX (JavaScript XML) is a syntax extension for JavaScript used in React.js to describe the structure of the UI. It allows developers to write HTML-like code within JavaScript, making it easier to create and manage UI components. JSX is not a requirement for React but is commonly used because it simplifies UI development.
+
+For example, instead of using traditional React.createElement() calls, JSX allows writing:
+
+const element = <h1>Hello, React!</h1>;
+
+Internally, JSX gets transpiled by Babel into standard JavaScript:
+
+const element = React.createElement("h1", null, "Hello, React!");
+
+JSX is Used Because:
+
+1.Improved Readability and Maintainability
+JSX makes the code more intuitive by visually resembling HTML, making it easier for developers to understand and maintain.
+
+2. Simplifies UI Development
+It allows combining HTML structure and JavaScript logic in a single file, reducing complexity.
+
+3. Better Performance with Virtual DOM
+JSX compiles to optimized JavaScript code, enabling faster rendering with React’s Virtual DOM.
+
+4. Ensures Security with XSS Protection
+JSX escapes potentially harmful content before rendering, protecting against cross-site scripting (XSS) attacks.
+
+5. Easier Debugging
+Since JSX code is more structured and resembles HTML, it’s easier to spot and fix errors compared to traditional JavaScript-based UI code.
+
+JSX is a powerful feature of React that enhances development speed and efficiency while keeping the codebase clean and readable.
+
+**********************************************************************
+
+Question 2: How is JSX different from regular JavaScript? Can you write JavaScript inside
+JSX?
+
+JSX (JavaScript XML) is a syntax extension that allows developers to write HTML-like code within JavaScript. While JSX looks like HTML, it is not valid JavaScript and must be transpiled into JavaScript using Babel before execution.
+
+Here are the key differences between JSX and regular JavaScript:
+
+1. HTML-Like Syntax
+
+➡️JSX allows writing elements using an HTML-like structure inside JavaScript.
+
+➡️Regular JavaScript uses React.createElement() to create elements manually.
+
+2. Requires Babel Compilation
+
+➡️Browsers do not understand JSX, so Babel converts it into standard JavaScript.
+
+➡️Example:
+
+ const element = <h1>Hello, React!</h1>; // JSX
+
+Transpiles to: 
+
+const element = React.createElement("h1", null, "Hello, React!"); // JavaScript
+
+3. Class vs. className
+
+JSX uses className instead of class (which is a reserved keyword in JavaScript).
+
+4. Curly Braces for Expressions
+
+JSX allows embedding JavaScript inside {} within elements.
+
+Yes! JavaScript expressions (but not statements like if or for) can be written inside {} within JSX.
+
+Example: const name = "Rishabh";  
+const element = <h1>Hello, {name}!</h1>;  
+
+You can also use functions, calculations, and ternary operators inside JSX.
+
+JSX makes React development easier while leveraging JavaScript’s power for dynamic UI updates.
+
+**********************************************************************
+Question 3: Discuss the importance of using curly braces {} in JSX expressions.
+
+In JSX, curly braces {} are essential for embedding JavaScript expressions inside JSX elements, allowing dynamic content rendering. They enable inserting variables, performing calculations, calling functions, and applying conditional logic within JSX. For example, {name} inserts a variable, {2 + 3} performs a calculation, and {getGreeting()} executes a function. Additionally, {isLoggedIn ? "Welcome back!" : "Please log in"} allows conditional rendering using the ternary operator since JSX does not support if-else statements directly. Curly braces make JSX more powerful by seamlessly integrating JavaScript, enabling developers to build dynamic and interactive UI components efficiently.
